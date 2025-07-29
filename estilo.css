@@ -1,0 +1,99 @@
+/* Paleta: preto (fundo), verde-limão (elementos), laranja (destaque) */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    /* preto escuro */
+    color: #ccff00;
+    /* verde-limão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ccff00;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #ff8000;
+    /* laranja */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ccff00;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #262626;
+    color: #ccff00;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff8000;
+    box-shadow: 0 0 8px #ff8000;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #ccff00;
+    color: #0d0d0d;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff8000;
+    color: #fff;
+    transform: scale(1.02);
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border: 2px solid #ff8000;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    input,
+    button {
+        font-size: 15px;
+    }
+}
